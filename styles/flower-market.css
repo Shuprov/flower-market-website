@@ -1,0 +1,70 @@
+/* Google fonts setup */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared styles */
+.display-flex {
+    display: flex;
+}
+
+.navbar-gray {
+    color: #8987A1;
+}
+
+.black-color {
+    color: #000000;
+}
+
+.dark-gray-color {
+    color: #111111;
+}
+
+.gray-color {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.content-body {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Navbar related styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 48px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+#home-color {
+    color: #252432;
+    font-weight: 700;
+}
+
+#cart-item {
+    padding-left: 10px;
+}
