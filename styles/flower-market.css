@@ -58,9 +58,35 @@ section {
     color: #E95A08;
 }
 
+.section-title-styles {
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+
 .paragraph-style {
     font-weight: 400;
     font-size: 1.375rem;
+}
+
+.plant-font-size {
+    font-size: 1.375rem;
+}
+
+.plant-medium-weight {
+    font-weight: 500;
+}
+
+.plant-bold-weight {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 19px 80px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /* Navbar related styles */
@@ -96,4 +122,60 @@ section {
     font-weight: 700;
     font-size: 4.0625rem;
     margin-bottom: 13px;
+}
+
+/* Plants section related styles */
+.plant-content {
+    text-align: center;
+}
+
+.plant-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+
+/* Mobile Responsive Code */
+@media screen and (max-width:576px) {
+    .hide {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    #cart-icon {
+        margin-left: 200px;
+    }
+
+    #cart-layout {
+        max-width: 200px;
+        max-height: 30px;
+    }
+
+    .cart-container {
+        align-items: center;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-content {
+        max-width: 361px;
+        margin-left: 16px;
+        margin-top: 28px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-description {
+        font-size: 0.875rem;
+    }
 }
