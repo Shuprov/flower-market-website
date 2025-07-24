@@ -20,6 +20,12 @@
 }
 
 /* Shared styles */
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 .display-flex {
     display: flex;
 }
@@ -42,6 +48,10 @@
 
 .background-color {
     background-color: #F5F8FF;
+}
+
+.footer-background-color {
+    background-color: #FAFCFF;
 }
 
 .content-body {
@@ -91,6 +101,15 @@ section {
     border: none;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.footer-gray-color {
+    color: #6B7280;
+}
+
+.footer-display-grid {
+    display: grid;
+    gap: 32px;
 }
 
 /* Navbar related styles */
@@ -152,8 +171,85 @@ section {
 .plants-lover-section {
     gap: 60px;
     align-items: center;
+    /* justify-content: center; */
     margin-top: 210px;
 }
+
+.plants-lover-content {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: left;
+    /* display: grid;
+    justify-items: center; */
+    /* margin-left: 100px; */
+}
+
+/* Join section styles */
+.join-section {
+    /* width: 1440px; */
+    height: 533px;
+    background-image: url("../assets/news-letter-bg.png");
+    /* width: 100%; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.join-content {
+    padding-top: 150px;
+}
+
+.join-title {
+    color: #FFFFFF;
+}
+
+#email-textbox {
+    width: 644px;
+    height: 50px;
+}
+
+#email-textbox::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15.5px 540px 15.5px 20px;
+}
+
+.btn-subscribe {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 17px 53.5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: -4.5px;
+}
+
+/* Footer related styles */
+.footer-section {
+    max-width: 1440px;
+    height: 348px;
+}
+
+.footer-container {
+    gap: 110px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 160px;
+}
+
+.footer-item {
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+
+
+
+
 
 /* Mobile Responsive Code */
 @media screen and (max-width:576px) {
@@ -224,4 +320,9 @@ section {
     #plants-lover-image {
         width: 100%;
     }
+
+    /* .plants-lover-content>h2,
+    ul {
+        width: 100%;
+    } */
 }
