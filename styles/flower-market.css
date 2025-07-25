@@ -64,6 +64,10 @@ section {
     margin-bottom: 120px;
 }
 
+#join-margin {
+    margin-bottom: 0;
+}
+
 .section-title {
     color: #E95A08;
 }
@@ -235,7 +239,10 @@ section {
     gap: 110px;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 160px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .footer-item {
@@ -246,6 +253,17 @@ section {
     text-decoration: none;
 }
 
+.icon-container {
+    gap: 24px;
+    margin-bottom: 200px;
+}
+
+#twitter-icon {
+    /* margin-top: 10px; */
+    /* width: 36px;
+    height: 36px; */
+    padding: 7.5px 9px;
+}
 
 
 
@@ -256,6 +274,22 @@ section {
     .hide {
         /* visibility: hidden; */
         display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 50px 20px;
+        background-color: #FAFCFF;
+    }
+
+    .icon-container {
+        margin-bottom: 0;
+    }
+
+    .footer-display-grid {
+        padding-left: 0;
     }
 
     .banner {
