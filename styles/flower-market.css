@@ -195,6 +195,18 @@ section {
     margin-top: 210px;
 }
 
+#plants-lover-image {
+    position: relative;
+}
+
+#trusted-badge {
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    bottom: 438px;
+    left: 347px;
+}
+
 .plants-lover-content {
     max-width: 540px;
     margin: 0 auto;
