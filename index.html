@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Market</title>
+    <title>Flower Shop</title>
     <!-- css link -->
     <link rel="stylesheet" href="styles/flower-market.css">
     <!-- font awesome link -->
@@ -52,7 +52,7 @@
                         class="section-title">Our</span> Plants</h2>
                 <p class="paragraph-style inter-font gray-color plant-content-desciption">Indulge your senses with the
                     beauty and fragrance of
-                    our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.
+                    our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of flowers.
                 </p>
             </div>
             <div class="plant-cards-container text-align-center">
@@ -114,14 +114,17 @@
                 <img src="./assets/flower-store.png" alt="Flower Store image">
             </div>
             <div class="plants-lover-content">
-                <h2 class="noto-serif-font black-color section-title-styles">Flower & Plants <br> Lover</h2>
+                <h2 id="plants-lover-headline" class="noto-serif-font black-color section-title-styles"> <span>Flower &
+                        Plants </span>
+                    <br> <span> Lover</span>
+                </h2>
                 <ul class="inter-font gray-color paragraph-style">
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
-                        to exotic blooms, we offer a wide variety of fresh.</li>
+                        to exotic blooms, we offer a wide variety of fresh flowers.</li>
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
-                        to exotic blooms, we offer a wide variety of fresh.</li>
+                        to exotic blooms, we offer a wide variety of fresh flowers.</li>
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
-                        to exotic blooms, we offer a wide variety of fresh.</li>
+                        to exotic blooms, we offer a wide variety of fresh flowers.</li>
                 </ul>
             </div>
         </section>
@@ -135,7 +138,7 @@
                 <p class="paragraph-style inter-font gray-color latest-deals-content-desciption">Indulge your senses
                     with the
                     beauty and fragrance of our fresh flower shop. From <br> classic roses to
-                    exotic blooms, we offer a wide variety of fresh.</p>
+                    exotic blooms, we offer a wide variety of flowers.</p>
             </div>
             <div class="latest-deals-cards-container display-flex white-color">
                 <div class="latest-deals-display-grid">
@@ -154,7 +157,7 @@
                         <p class="inter-font latest-deals-plant-link"> <a class="white-color" href="">Shop Now</a> </p>
                     </div>
                 </div>
-                <div class="latest-deals-zabo-plant">
+                <div id="latest-deals-zabo-responsive" class="latest-deals-zabo-plant">
                     <!-- <img src="./assets/deal-zabo.png" alt="Zabo plant image"> -->
                     <h3 class="noto-serif-font latest-deals-zabo-title">25% Off | Zabo Plant</h3>
                     <p class="inter-font latest-deals-zabo-link"> <a class="white-color" href="">Shop Now</a> </p>
@@ -166,8 +169,11 @@
         <section id="join-margin" class="join-section">
             <div class="join-content text-align-center">
                 <h2 class="join-title noto-serif-font section-title-styles">Join the colorful Bunch</h2>
-                <input class="inter-font" type="email" name="" id="email-textbox" placeholder="Write email">
-                <input class="btn-subscribe inter-font" type="submit" value="Subscribe">
+                <div class="input-container">
+                    <input class="inter-font email-textbox" type="email" name="" id="" placeholder="Write email">
+                    <input class="btn-subscribe inter-font" type="submit" value="Subscribe">
+                </div>
+                <!-- <button class="btn-subscribe inter-font">Subscribe</button> -->
             </div>
         </section>
     </main>

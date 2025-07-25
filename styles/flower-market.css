@@ -26,6 +26,18 @@
     box-sizing: border-box;
 } */
 
+* {
+    /* box-sizing: border-box; */
+}
+
+/* Base body styling */
+body {
+    /* margin: 0;
+    padding: 0; */
+    /* width: 100%; */
+}
+
+
 .display-flex {
     display: flex;
 }
@@ -161,8 +173,10 @@ section {
 }
 
 /* Banner related styles */
+
 .banner {
     align-items: center;
+    width: 100%;
 }
 
 .banner-title {
@@ -319,12 +333,12 @@ section {
     color: #FFFFFF;
 }
 
-#email-textbox {
+.email-textbox {
     width: 644px;
     height: 50px;
 }
 
-#email-textbox::placeholder {
+.email-textbox::placeholder {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     font-weight: 400;
@@ -385,6 +399,13 @@ section {
 
 /* Mobile Responsive Code */
 @media screen and (max-width:576px) {
+    body {
+        width: 100vw;
+        /* Ensures full viewport width */
+        overflow-x: hidden;
+        /* Prevents horizontal scroll if content overflows */
+    }
+
     .hide {
         /* visibility: hidden; */
         display: none;
@@ -397,6 +418,56 @@ section {
         flex-direction: column;
         /* width: 361px;
         height: auto; */
+    }
+
+    .latest-deals-bloom-plant {
+        width: 520px;
+        background-size: cover;
+    }
+
+    .latest-deals-ana-plant {
+        width: 520px;
+        background-size: cover;
+    }
+
+    #latest-deals-zabo-responsive {
+        width: 520px;
+        background-size: cover;
+    }
+
+    .latest-deals-content {
+        width: 520px;
+    }
+
+    .email-textbox {
+        width: 218px;
+        height: 50px;
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 30px;
+        margin-left: 120px; */
+    }
+
+    .join-title {
+        font-size: 1.25rem;
+    }
+
+    .join-section {
+        width: 560px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .btn-subscribe {
+        width: 103px;
+        height: 50px;
+        padding: 15px 12px;
+        margin-top: 3px;
+        margin-left: -1.5px;
     }
 
     .latest-deals-zabo-plant {
@@ -429,8 +500,12 @@ section {
         padding-left: 0;
     }
 
-    .banner {
-        flex-direction: column-reverse;
+    .navbar {
+        width: 555px;
+        /* margin-left: 16px;
+        margin-right: 16px; */
+        margin: 5px 16px;
+        /* height: auto; */
     }
 
     #cart-icon {
@@ -440,10 +515,15 @@ section {
     #cart-layout {
         max-width: 200px;
         max-height: 30px;
+        font-size: 1.30rem;
     }
 
     .cart-container {
         align-items: center;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
     }
 
     .banner-image {
@@ -451,7 +531,8 @@ section {
     }
 
     .banner-content {
-        max-width: 361px;
+        width: 400px;
+        /* height: auto; */
         margin-left: 16px;
         margin-top: 28px;
     }
@@ -465,9 +546,11 @@ section {
     }
 
     .plant-content {
-        max-width: 361px;
+        width: 393px;
+        height: 117px;
         margin-top: 10px;
-        margin-left: 160px;
+        margin-bottom: 28px;
+        margin-left: 90px;
     }
 
     .plant-cards-container {
@@ -492,6 +575,18 @@ section {
 
     #plants-lover-image {
         width: 100%;
+    }
+
+    #plants-lover-headline {
+        font-size: 1.5rem;
+        display: flex;
+        gap: 4px;
+    }
+
+    .plants-lover-content {
+        width: 520px;
+        margin-bottom: 143px;
+        /* height: auto; */
     }
 
     /* .plants-lover-content>h2,
